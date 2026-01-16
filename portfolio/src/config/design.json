@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "name": "soft-rounded-editorial-portfolio",
+    "category": "personal-portfolio",
+    "design_intent": "minimal, calm, high-end portfolio with strong focus on typography and spacing"
+  },
+
+  "design_style": {
+    "keywords": [
+      "soft minimal",
+      "editorial",
+      "modern",
+      "calm",
+      "professional",
+      "premium"
+    ],
+    "visual_density": "low",
+    "decoration_level": "very minimal",
+    "emphasis": "typography and layout over visuals"
+  },
+
+  "layout_system": {
+    "overall_structure": "stacked vertical sections",
+    "primary_container": {
+      "shape": "large rounded rectangle",
+      "alignment": "centered",
+      "max_width": "medium",
+      "padding": "generous"
+    },
+    "section_order": [
+      "hero",
+      "trust_logos",
+      "services",
+      "primary_call_to_action",
+      "footer"
+    ],
+    "spacing": {
+      "between_sections": "very large",
+      "within_sections": "balanced and consistent"
+    }
+  },
+
+  "color_system": {
+    "backgrounds": {
+      "page": "warm light neutral",
+      "surface": "soft off-white",
+      "cards": "slightly brighter neutral"
+    },
+    "text": {
+      "primary": "near-black",
+      "secondary": "muted dark gray",
+      "tertiary": "light gray"
+    },
+    "accent": {
+      "color_type": "neutral dark",
+      "usage": "buttons and small emphasis only",
+      "frequency": "very limited"
+    },
+    "contrast": "soft but accessible"
+  },
+
+  "typography": {
+    "font_type": "modern sans-serif",
+    "hierarchy": {
+      "hero_heading": {
+        "size": "very large",
+        "weight": "bold",
+        "line_height": "tight",
+        "max_width": "constrained"
+      },
+      "section_heading": {
+        "size": "large",
+        "weight": "semi-bold"
+      },
+      "body_text": {
+        "size": "medium",
+        "weight": "regular",
+        "line_height": "comfortable"
+      },
+      "caption": {
+        "size": "small",
+        "weight": "regular",
+        "opacity": "reduced"
+      }
+    },
+    "alignment": "mostly centered"
+  },
+
+  "component_patterns": {
+    "hero": {
+      "layout": "centered vertical stack",
+      "elements": [
+        "profile_indicator",
+        "primary_statement",
+        "single_primary_button"
+      ],
+      "focus": "headline typography"
+    },
+
+    "trust_logos": {
+      "layout": "horizontal row",
+      "style": "monochrome",
+      "opacity": "reduced",
+      "spacing": "even"
+    },
+
+    "services": {
+      "layout": "grid",
+      "columns": "responsive",
+      "icon_style": "simple outline",
+      "text_alignment": "centered",
+      "card_style": "borderless and minimal"
+    },
+
+    "call_to_action": {
+      "layout": "centered",
+      "headline_emphasis": "strong",
+      "actions": [
+        "primary_filled_button",
+        "secondary_outline_button"
+      ]
+    }
+  },
+
+  "buttons": {
+    "shape": "pill",
+    "size": "medium to large",
+    "padding": "wide horizontal padding",
+    "styles": {
+      "primary": "solid dark background with light text",
+      "secondary": "light background with dark border"
+    },
+    "hover_behavior": "subtle opacity or shadow shift"
+  },
+
+  "borders_and_radius": {
+    "global_radius": "large",
+    "container_radius": "extra large",
+    "button_radius": "fully rounded"
+  },
+
+  "motion": {
+    "animation_style": "subtle and smooth",
+    "animations": [
+      "fade-in",
+      "slight upward translate on entry"
+    ],
+    "duration": "short",
+    "easing": "ease-out"
+  },
+
+  "responsive_behavior": {
+    "strategy": "mobile-first",
+    "mobile": {
+      "layout": "single column",
+      "text_alignment": "centered",
+      "spacing": "slightly reduced"
+    },
+    "tablet": {
+      "layout": "wider spacing",
+      "grid_columns": "increase gradually"
+    },
+    "desktop": {
+      "layout": "max-width container",
+      "spacing": "very generous"
+    }
+  },
+
+  "ai_usage_rules": {
+    "allowed": [
+      "Tailwind utility classes",
+      "React components",
+      "mobile-first layouts"
+    ],
+    "avoid": [
+      "bright or saturated colors",
+      "hard shadows",
+      "heavy borders",
+      "complex gradients",
+      "visual clutter"
+    ],
+    "consistency_rule": "all sections must feel part of one soft, rounded, calm system"
+  }
+}
