@@ -1,184 +1,181 @@
 {
-  "meta": {
-    "name": "soft-rounded-editorial-portfolio",
-    "category": "personal-portfolio",
-    "design_intent": "minimal, calm, high-end portfolio with strong focus on typography and spacing"
-  },
-
-  "design_style": {
-    "keywords": [
-      "soft minimal",
-      "editorial",
-      "modern",
-      "calm",
-      "professional",
-      "premium"
-    ],
-    "visual_density": "low",
-    "decoration_level": "very minimal",
-    "emphasis": "typography and layout over visuals"
-  },
-
-  "layout_system": {
-    "overall_structure": "stacked vertical sections",
-    "primary_container": {
-      "shape": "large rounded rectangle",
-      "alignment": "centered",
-      "max_width": "medium",
-      "padding": "generous"
-    },
-    "section_order": [
-      "hero",
-      "trust_logos",
-      "services",
-      "primary_call_to_action",
-      "footer"
-    ],
-    "spacing": {
-      "between_sections": "very large",
-      "within_sections": "balanced and consistent"
-    }
+  "design_meta": {
+    "category": "High-Converting SaaS / Personal Portfolio Landing Page",
+    "theme": "Dark",
+    "tone": "Minimal, Professional, Conversion-Focused",
+    "visual_density": "Low",
+    "primary_goal": "Guide user linearly from awareness to action"
   },
 
   "color_system": {
-    "backgrounds": {
-      "page": "warm light neutral",
-      "surface": "soft off-white",
-      "cards": "slightly brighter neutral"
+    "background": {
+      "primary": "#0B0B0C",
+      "secondary": "#121214",
+      "elevated": "#18181B"
     },
     "text": {
-      "primary": "near-black",
-      "secondary": "muted dark gray",
-      "tertiary": "light gray"
+      "primary": "#FFFFFF",
+      "secondary": "#A1A1AA",
+      "muted": "#71717A"
     },
     "accent": {
-      "color_type": "neutral dark",
-      "usage": "buttons and small emphasis only",
-      "frequency": "very limited"
+      "primary": "#FFFFFF",
+      "secondary": "#3F3F46",
+      "cta": "#FFFFFF"
     },
-    "contrast": "soft but accessible"
+    "border": {
+      "default": "rgba(255,255,255,0.08)",
+      "hover": "rgba(255,255,255,0.18)"
+    }
   },
 
   "typography": {
-    "font_type": "modern sans-serif",
-    "hierarchy": {
-      "hero_heading": {
-        "size": "very large",
-        "weight": "bold",
-        "line_height": "tight",
-        "max_width": "constrained"
-      },
-      "section_heading": {
-        "size": "large",
-        "weight": "semi-bold"
-      },
-      "body_text": {
-        "size": "medium",
-        "weight": "regular",
-        "line_height": "comfortable"
-      },
-      "caption": {
-        "size": "small",
-        "weight": "regular",
-        "opacity": "reduced"
-      }
+    "font_family": {
+      "primary": "Inter / System Sans",
+      "fallback": "sans-serif"
     },
-    "alignment": "mostly centered"
-  },
-
-  "component_patterns": {
-    "hero": {
-      "layout": "centered vertical stack",
-      "elements": [
-        "profile_indicator",
-        "primary_statement",
-        "single_primary_button"
-      ],
-      "focus": "headline typography"
+    "scale": {
+      "hero_heading": "text-4xl to text-6xl",
+      "section_heading": "text-2xl to text-3xl",
+      "card_title": "text-lg",
+      "body": "text-sm to text-base",
+      "caption": "text-xs"
     },
-
-    "trust_logos": {
-      "layout": "horizontal row",
-      "style": "monochrome",
-      "opacity": "reduced",
-      "spacing": "even"
+    "weight": {
+      "headings": "600-700",
+      "body": "400-500"
     },
-
-    "services": {
-      "layout": "grid",
-      "columns": "responsive",
-      "icon_style": "simple outline",
-      "text_alignment": "centered",
-      "card_style": "borderless and minimal"
-    },
-
-    "call_to_action": {
-      "layout": "centered",
-      "headline_emphasis": "strong",
-      "actions": [
-        "primary_filled_button",
-        "secondary_outline_button"
-      ]
+    "line_height": {
+      "headings": "tight",
+      "body": "relaxed"
     }
   },
 
-  "buttons": {
-    "shape": "pill",
-    "size": "medium to large",
-    "padding": "wide horizontal padding",
-    "styles": {
-      "primary": "solid dark background with light text",
-      "secondary": "light background with dark border"
+  "layout_system": {
+    "container_width": "max-w-6xl to max-w-7xl",
+    "horizontal_padding": "px-6 md:px-8",
+    "section_spacing": "py-24",
+    "grid": {
+      "default": "12-column",
+      "cards": "3-column desktop, 1-column mobile",
+      "features": "3x2 grid"
     },
-    "hover_behavior": "subtle opacity or shadow shift"
+    "alignment": "centered sections with left-aligned text blocks"
   },
 
-  "borders_and_radius": {
-    "global_radius": "large",
-    "container_radius": "extra large",
-    "button_radius": "fully rounded"
+  "navigation": {
+    "type": "Sticky Top Navigation",
+    "behavior": "Scroll-based section navigation",
+    "visibility": "Always visible",
+    "cta_position": "Right aligned",
+    "interaction": {
+      "active_state": "Underline or opacity change",
+      "scroll_spy": true
+    }
+  },
+
+  "section_structure": [
+    {
+      "name": "Hero",
+      "purpose": "Immediate value proposition",
+      "elements": [
+        "Headline",
+        "Supporting description",
+        "Primary CTA",
+        "Secondary CTA",
+        "Visual placeholder"
+      ],
+      "layout": "Two-column (text + visual)",
+      "focus": "Clarity over creativity"
+    },
+    {
+      "name": "Social Proof / Partners",
+      "purpose": "Trust reinforcement",
+      "layout": "Horizontal logo row or indicators",
+      "visual_weight": "Low"
+    },
+    {
+      "name": "Benefits",
+      "purpose": "Explain outcomes, not features",
+      "layout": "Card grid",
+      "card_style": "Soft border, minimal contrast"
+    },
+    {
+      "name": "How It Works",
+      "purpose": "Reduce cognitive friction",
+      "layout": "Step-based cards",
+      "steps": 3
+    },
+    {
+      "name": "Pricing / Value",
+      "purpose": "Anchor perceived value",
+      "layout": "3-card pricing grid",
+      "highlight": "Middle or recommended option"
+    },
+    {
+      "name": "Testimonials",
+      "purpose": "Emotional validation",
+      "layout": "Card carousel or grid"
+    },
+    {
+      "name": "FAQ",
+      "purpose": "Handle objections",
+      "interaction": "Accordion"
+    },
+    {
+      "name": "Final CTA",
+      "purpose": "Conversion",
+      "layout": "Isolated section with strong contrast"
+    }
+  ],
+
+  "components": {
+    "cards": {
+      "radius": "rounded-xl",
+      "border": "1px subtle",
+      "hover": "Slight lift + border highlight",
+      "background": "elevated"
+    },
+    "buttons": {
+      "primary": {
+        "style": "Solid",
+        "radius": "rounded-md",
+        "padding": "px-6 py-3"
+      },
+      "secondary": {
+        "style": "Outline",
+        "border": "subtle"
+      }
+    }
   },
 
   "motion": {
-    "animation_style": "subtle and smooth",
-    "animations": [
-      "fade-in",
-      "slight upward translate on entry"
-    ],
-    "duration": "short",
-    "easing": "ease-out"
+    "library": "Framer Motion (optional)",
+    "entry_animations": "Fade + slight upward motion",
+    "hover_effects": "Scale 1.02",
+    "scroll_behavior": "Smooth scrolling",
+    "timing": "Fast, subtle, non-distracting"
   },
 
-  "responsive_behavior": {
-    "strategy": "mobile-first",
-    "mobile": {
-      "layout": "single column",
-      "text_alignment": "centered",
-      "spacing": "slightly reduced"
-    },
-    "tablet": {
-      "layout": "wider spacing",
-      "grid_columns": "increase gradually"
-    },
-    "desktop": {
-      "layout": "max-width container",
-      "spacing": "very generous"
-    }
+  "interaction_principles": {
+    "focus": "One primary action per section",
+    "visual_noise": "Minimal",
+    "contrast_usage": "Only for CTAs",
+    "cognitive_load": "Low"
   },
 
-  "ai_usage_rules": {
-    "allowed": [
-      "Tailwind utility classes",
-      "React components",
-      "mobile-first layouts"
+  "ai_replication_guidelines": {
+    "do": [
+      "Maintain vertical rhythm",
+      "Use consistent card patterns",
+      "Keep text concise",
+      "Emphasize outcomes over features"
     ],
     "avoid": [
-      "bright or saturated colors",
-      "hard shadows",
-      "heavy borders",
-      "complex gradients",
-      "visual clutter"
-    ],
-    "consistency_rule": "all sections must feel part of one soft, rounded, calm system"
+      "Bright colors",
+      "Over-animation",
+      "Dense text blocks",
+      "Unstructured sections"
+    ]
   }
 }
