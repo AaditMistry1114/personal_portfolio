@@ -35,7 +35,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection('hero')}
-            className="text-white font-semibold text-lg hover:text-white/80 transition-colors"
+            className="text-white font-semibold text-lg hover:text-gray-300 transition-colors focus:outline-none focus:text-gray-300 active:text-gray-400"
           >
             Portfolio
           </button>
@@ -45,10 +45,10 @@ export default function Navbar() {
               <li key={item.id}>
                 <button
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-sm font-medium transition-colors ${
+                  className={`text-sm font-medium transition-colors focus:outline-none ${
                     activeSection === item.id
                       ? 'text-white'
-                      : 'text-gray-400 hover:text-white'
+                      : 'text-gray-400 hover:text-white active:text-gray-300'
                   }`}
                 >
                   {item.label}
