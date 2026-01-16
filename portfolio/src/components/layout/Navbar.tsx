@@ -51,10 +51,29 @@ export default function Navbar() {
                       : 'text-gray-400 hover:text-white active:text-gray-300'
                   }`}
                 >
+                    
                   {item.label}
                 </button>
               </li>
             ))}
+            <li>
+            <a
+                href="/resume.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative rounded-lg px-4 py-2 text-sm font-medium text-white 
+                bg-white/10 backdrop-blur 
+                border border-white/20 
+                transition-all duration-300 
+                hover:bg-white hover:text-black 
+                hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]"
+            >
+                <span className="tracking-wide">Resume</span>
+
+            </a>
+            </li>
+
           </ul>
         </div>
       </div>
