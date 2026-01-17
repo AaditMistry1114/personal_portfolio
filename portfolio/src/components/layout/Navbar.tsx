@@ -6,8 +6,9 @@ import { scrollToSection } from '../../lib/scroll';
 const navItems = [
   { id: 'hero', label: 'Home' },
   { id: 'about', label: 'About' },
+  { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
-  { id: 'inquiry', label: 'Contact' },
+  { id: 'inquiry', label: 'Contact' }
 ];
 
 export default function Navbar() {
