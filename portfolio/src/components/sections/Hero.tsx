@@ -5,26 +5,31 @@ import { scrollToSection } from '../../lib/scroll';
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center bg-black pt-24 lg:pt-0">
+    <section
+      id="hero"
+      className="min-h-screen flex items-center bg-black pt-24 lg:pt-0 px-4 sm:px-6 lg:px-8"
+    >
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
-          {/* LEFT: TEXT CONTENT */}
+          {/* LEFT */}
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 lg:mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 lg:mb-6 px-2 sm:px-0">
               Aadit Mistry
             </h1>
 
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-4 lg:mb-6 leading-relaxed">
-              Web Developer with a strong backend foundation and a passion for building practical, adaptable solutions.
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-4 lg:mb-6 leading-relaxed px-2 sm:px-0">
+              Web Developer with a strong backend foundation and a passion for building
+              practical, adaptable solutions.
             </p>
 
-            <p className="text-base md:text-lg text-gray-400 mb-8 lg:mb-10 leading-relaxed">
-              Passionate about learning new technologies quickly and turning ideas into working projects using modern tools.
+            <p className="text-sm sm:text-base md:text-lg text-gray-400 mb-8 lg:mb-10 leading-relaxed px-2 sm:px-0">
+              Passionate about learning new technologies quickly and turning ideas into
+              working projects using modern tools.
             </p>
 
             {/* CTA BUTTONS */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 lg:mb-10">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 lg:mb-10 px-2 sm:px-0">
               <a
                 href="/resume.pdf"
                 download
@@ -60,69 +65,69 @@ export default function Hero() {
               </button>
             </div>
 
-          {/* SOCIAL ICONS - Premium micro-interactions */}
-<div className="flex items-center justify-center lg:justify-start gap-6">
-  <a
-    href="https://github.com/AaditMistry1114"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="
-      text-gray-400
-      transition-all duration-400 ease-out
-      hover:text-white
-      md:hover:scale-105
-      md:hover:-translate-y-0.5
-      md:hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]
-    "
-    aria-label="GitHub"
-  >
-    <Github size={24} />
-  </a>
+            {/* SOCIAL ICONS */}
+            <div className="flex items-center justify-center lg:justify-start gap-6">
+              <a
+                href="https://github.com/AaditMistry1114"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  text-gray-400
+                  transition-all duration-400 ease-out
+                  hover:text-white
+                  md:hover:scale-105
+                  md:hover:-translate-y-0.5
+                  md:hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]
+                "
+                aria-label="GitHub"
+              >
+                <Github size={24} />
+              </a>
 
-  <a
-    href="https://www.linkedin.com/in/aadit-mistry-b5865b317/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="
-      text-gray-400
-      transition-all duration-400 ease-out
-      hover:text-white
-      md:hover:scale-105
-      md:hover:-translate-y-0.5
-      md:hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]
-    "
-    aria-label="LinkedIn"
-  >
-    <Linkedin size={24} />
-  </a>
+              <a
+                href="https://www.linkedin.com/in/aadit-mistry-b5865b317/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  text-gray-400
+                  transition-all duration-400 ease-out
+                  hover:text-white
+                  md:hover:scale-105
+                  md:hover:-translate-y-0.5
+                  md:hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]
+                "
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={24} />
+              </a>
 
-  <a
-    href="https://www.instagram.com/_aadicted/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="
-      text-gray-400
-      transition-all duration-400 ease-out
-      hover:text-white
-      md:hover:scale-105
-      md:hover:-translate-y-0.5
-      md:hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]
-    "
-    aria-label="Instagram"
-  >
-    <Instagram size={24} />
-  </a>
-</div>
+              <a
+                href="https://www.instagram.com/_aadicted/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  text-gray-400
+                  transition-all duration-400 ease-out
+                  hover:text-white
+                  md:hover:scale-105
+                  md:hover:-translate-y-0.5
+                  md:hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]
+                "
+                aria-label="Instagram"
+              >
+                <Instagram size={24} />
+              </a>
+            </div>
           </div>
 
-          {/* RIGHT: PROFILE IMAGE */}
+          {/* RIGHT */}
           <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
             <div className="relative">
               <img
                 src="/profile.jpeg"
                 alt="Aadit Mistry"
                 className="
-                  w-64 h-64 lg:w-80 lg:h-80
+                  w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80
                   object-cover rounded-2xl
                   border border-white/10
                   transition-all duration-700 ease-out

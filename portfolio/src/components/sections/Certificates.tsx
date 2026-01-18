@@ -25,18 +25,18 @@ export default function Certificates() {
   ];
 
   return (
-    <section id="certificates" className="min-h-screen flex items-center bg-black py-24">
+    <section id="certificates" className="min-h-screen flex items-center bg-black py-20 sm:py-24 px-4 sm:px-6 lg:px-8">
       <Container>
-        <div className="mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <div className="mb-8 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 text-center lg:text-left">
             Certifications & Learning
           </h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-base sm:text-lg text-gray-400 text-center lg:text-left">
             Verified certifications from recognized platforms.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {certificates.map((cert, index) => (
             <CertificateCard
               key={index}

@@ -52,19 +52,19 @@ export default function Inquiry() {
   };
 
   return (
-    <section id="inquiry" className="min-h-screen flex items-center bg-black py-24">
+    <section id="inquiry" className="min-h-screen flex items-center bg-black py-20 sm:py-24 px-4 sm:px-6 lg:px-8">
       <Container>
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 text-center lg:text-left">
             Get in Touch
           </h2>
           
-          <p className="text-lg text-gray-400 mb-12 leading-relaxed">
+          <p className="text-base sm:text-lg text-gray-400 mb-8 sm:mb-12 leading-relaxed text-center lg:text-left">
             Have a project in mind or want to discuss opportunities? 
             Send me a message and I'll get back to you soon.
           </p>
           
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                 Name
@@ -125,13 +125,13 @@ export default function Inquiry() {
             </button>
 
             {status === 'success' && (
-              <p className="text-green-400 text-center">
+              <p className="text-green-400 text-center text-sm sm:text-base">
                 Message sent successfully! I'll get back to you soon.
               </p>
             )}
 
             {status === 'error' && (
-              <p className="text-red-400 text-center">
+              <p className="text-red-400 text-center text-sm sm:text-base">
                 Failed to send message. Please try again or contact me directly.
               </p>
             )}

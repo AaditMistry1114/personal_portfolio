@@ -80,11 +80,13 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="min-h-screen bg-black py-24">
+    <section id="projects" className="min-h-screen bg-black py-20 sm:py-24 px-4 sm:px-6 lg:px-8">
       <Container>
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-16">Projects</h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-10 sm:mb-16 text-center lg:text-left">
+          Projects
+        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}

@@ -17,22 +17,22 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="min-h-screen flex items-center bg-black py-24">
+    <section id="about" className="min-h-screen flex items-center bg-black py-20 sm:py-24 px-4 sm:px-6 lg:px-8">
       <Container>
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-12">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 sm:mb-12 text-center lg:text-left">
           About
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {/* Left Column: About Text */}
-          <div className="space-y-4">
-            <p className="text-lg text-gray-400 leading-relaxed">
+          <div className="space-y-4 sm:space-y-5">
+            <p className="text-base sm:text-lg text-gray-400 leading-relaxed">
               I specialize in building modern web applications with a focus on
               performance, accessibility, and user experience. My approach combines
               clean code practices with thoughtful design to create products that
               are both functional and enjoyable to use.
             </p>
-            <p className="text-lg text-gray-400 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-400 leading-relaxed">
               As a backend-first developer, I leverage AI tools to accelerate 
               development and bring ideas to life quickly, while maintaining 
               code quality and scalability.
@@ -40,15 +40,15 @@ export default function About() {
           </div>
 
           {/* Right Column: Quick Profile Card */}
-          <div className="bg-white/5 border border-white/10 rounded-lg p-6">
-            <h3 className="text-xl font-semibold text-white mb-4">
+          <div className="bg-white/5 border border-white/10 rounded-lg p-5 sm:p-6 w-full">
+            <h3 className="text-lg sm:text-xl font-semibold text-white mb-4">
               Quick Profile
             </h3>
             <div className="space-y-3">
               {profileItems.map((item, index) => (
                 <div key={index} className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
                   <span className="text-sm text-gray-500">{item.label}</span>
-                  <span className="text-gray-300">{item.value}</span>
+                  <span className="text-sm sm:text-base text-gray-300">{item.value}</span>
                 </div>
               ))}
             </div>
@@ -56,11 +56,11 @@ export default function About() {
         </div>
 
         {/* Focus Areas / Skills Snapshot */}
-        <div className="bg-white/5 border border-white/10 rounded-lg p-6">
-          <h3 className="text-xl font-semibold text-white mb-6">
+        <div className="bg-white/5 border border-white/10 rounded-lg p-5 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-semibold text-white mb-5 sm:mb-6">
             Focus Areas / Skills Snapshot
           </h3>
-          <div className="space-y-4">
+          <div className="space-y-4 sm:space-y-5">
             {Object.entries(skills).map(([category, items]) => (
               <div key={category}>
                 <h4 className="text-sm text-gray-500 mb-2">{category}</h4>
@@ -68,7 +68,7 @@ export default function About() {
                   {items.map((skill, index) => (
                     <span
                       key={index}
-                      className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300"
+                      className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300"
                     >
                       {skill}
                     </span>

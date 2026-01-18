@@ -84,7 +84,7 @@ export default function Footer() {
     <footer className="w-full bg-black relative">
       {/* Toast */}
       <div
-        className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${
+        className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 px-4 ${
           showToast
             ? 'opacity-100 translate-y-0'
             : 'opacity-0 -translate-y-2 pointer-events-none'
@@ -101,14 +101,14 @@ export default function Footer() {
       {/* Divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="py-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="py-12 sm:py-16 flex flex-col md:flex-row items-center md:items-start md:justify-between gap-8 sm:gap-12">
           {/* Left */}
-          <div className="space-y-3">
+          <div className="space-y-3 text-center md:text-left">
             <h3 className="text-lg font-medium text-white tracking-tight">
               Aadit Mistry
             </h3>
-            <p className="text-sm text-gray-500 max-w-xs leading-relaxed">
+            <p className="text-sm text-gray-500 max-w-xs leading-relaxed px-4 sm:px-0 mx-auto md:mx-0">
               Building practical, adaptable digital experiences.
             </p>
           </div>
@@ -141,27 +141,37 @@ export default function Footer() {
               </button>
             </nav>
 
-            {/* Email card */}
+            {/* Email card - Desktop: above icons, Mobile: bottom sheet */}
             <div
               ref={cardRef}
-              className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-72 transition-all duration-300 ${
-                isEmailCardOpen
-                  ? 'opacity-100 translate-y-0 pointer-events-auto'
-                  : 'opacity-0 translate-y-2 pointer-events-none'
-              }`}
+              className={`
+                fixed sm:absolute 
+                bottom-0 sm:bottom-full 
+                left-0 sm:left-1/2 
+                sm:-translate-x-1/2 sm:mb-3 
+                w-full sm:w-72 
+                transition-all duration-300 z-40
+                ${
+                  isEmailCardOpen
+                    ? 'opacity-100 translate-y-0 pointer-events-auto'
+                    : 'opacity-0 translate-y-full sm:translate-y-2 pointer-events-none'
+                }
+              `}
             >
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-4 space-y-3">
-                <div>
-                  <p className="text-xs text-gray-500 uppercase tracking-wider">
+              <div className="bg-white/5 backdrop-blur-sm border-t sm:border border-white/10 sm:rounded-lg rounded-t-lg sm:rounded-b-lg p-4 sm:p-5 space-y-3 mx-4 sm:mx-0 mb-4 sm:mb-0">
+                <div className="space-y-1">
+                  <p className="text-xs text-gray-500 font-medium uppercase tracking-wider">
                     Email Address
                   </p>
-                  <p className="text-sm text-white font-mono">{email}</p>
+                  <p className="text-sm text-white font-mono break-all">
+                    {email}
+                  </p>
                 </div>
 
                 <button
                   onClick={handleCopyEmail}
                   disabled={isCopied}
-                  className={`w-full py-2 px-3 rounded-md text-sm font-medium flex items-center justify-center gap-2 transition-all ${
+                  className={`w-full py-3 px-3 rounded-md text-sm font-medium flex items-center justify-center gap-2 transition-all ${
                     isCopied
                       ? 'bg-green-500/10 text-green-400 border border-green-500/20'
                       : 'bg-white/5 text-gray-300 border border-white/10 hover:bg-white/10 hover:text-white'
@@ -181,25 +191,26 @@ export default function Footer() {
                 </button>
               </div>
 
-              <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-white/5 border-b border-r border-white/10 rotate-45" />
+              {/* Arrow pointer - desktop only */}
+              <div className="hidden sm:block absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-white/5 border-b border-r border-white/10 rotate-45" />
             </div>
           </div>
 
           {/* Right */}
           <button
             onClick={scrollToTop}
-            className="hidden md:flex items-center gap-2 text-[13px] font-medium text-gray-500 hover:text-white group"
+            className="hidden md:flex items-center gap-2 text-[13px] font-medium text-gray-500 hover:text-white transition-colors duration-200 group"
           >
             <span className="relative">
               Back to top
-              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-white transition-all group-hover:w-full" />
+              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-white transition-all duration-200 group-hover:w-full" />
             </span>
             <ArrowUp className="w-3.5 h-3.5 group-hover:-translate-y-0.5 transition-transform" />
           </button>
         </div>
 
         <div className="border-t border-white/5 py-8">
-          <p className="text-[13px] text-gray-600 text-center font-light tracking-wide">
+          <p className="text-[13px] text-white-600 text-center font-light tracking-wide">
             © 2026 Aadit Mistry. All rights reserved.
           </p>
         </div>
