@@ -5,6 +5,7 @@ import About from './components/sections/About';
 import Projects from './components/sections/Projects';
 import Inquiry from './components/sections/Inquiry';
 import Experience from './components/sections/Experience';
+import Certificates from './components/sections/Certificates';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <main className="w-full">
         <Hero />
         <About />
+        <Certificates />
         <Experience />
         <Projects />
         <Inquiry />
