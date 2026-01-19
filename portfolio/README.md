@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+# Aadit Mistry — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio showcasing my work as a **backend-first web developer** with a focus on clean architecture, usability, and scalable solutions.
 
-Currently, two official plugins are available:
+🔗 **Live Website:**  
+https://personal-portfolio-e1sq425n9-aadits-projects-1ff3ff4a.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 👋 About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I am a Web Developer with a strong backend foundation, passionate about building practical and adaptable digital products.  
+I focus on writing clean, maintainable code while using modern tools and AI-assisted workflows to ship efficiently.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Highlights
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Responsive, dark-themed UI with subtle animations
+- Interactive particle-based hero background
+- Clear presentation of skills, certifications, and experience
+- Project showcase with tech stacks and live demos
+- Leadership & teamwork experience highlighted
+- Contact form and resume download
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Frontend:** React, TypeScript, Tailwind CSS  
+**Backend:** Python, Flask, MySQL, REST APIs  
+**Tools:** Git, GitHub, AI Tools, Vercel
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📂 Featured Projects
+
+- **Junk Journal** — Habit & spending awareness web app  
+- **FocusFlow** — Task-first productivity and focus tracker  
+- **Halo Architect** — Professional website for an architecture firm  
+- **Water Pollution Report System** — Location-based reporting with backend integration  
+- **Recipe Finder with AR** — Collaborative AR-based web project  
+
+(Details available on the website.)
+
+---
+
+## 🚀 What I’m Learning
+
+- System design fundamentals  
+- Scalable backend architectures  
+
+---
+
+## 📄 Resume & Contact
+
+Resume, social links, and contact form are available on the website.
+
+---
+
+© 2026 Aadit Mistry
